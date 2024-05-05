@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Log-in Menu</title>
+
+	<style>
+		body{
+			background-image: url('https://img.freepik.com/free-vector/abstract-white-tone-memphis-social-background_53876-113860.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		#loginmenu{
+			background: #E0E0E0;
+			width: 475px;
+			height: 600px;
+			border: solid 5px;
+			border-color: grey;
+			border-radius: 8px;
+		}
+		#email,#password{
+			width: 350px;
+		}
+		#profilepic{
+			width: 130px;
+			height: 130px;
+			border: solid;
+			border-color: dimgray;
+		}
+		#brand{
+			width: 70px;
+			height: 80px;
+		}
+		#links{
+			font-family: Cascadia Code;
+			font-size: 16px;
+		}
+
+	</style>
+</head>
+<body>
+
+<nav class="justify-content-left navbar navbar-expand-md bg-dark">
+<img class="navbar-brand rounded-circle" src="ICT Logo.png" id="brand">
+
+	<div id="topnav">
+	<div class="navbar-nav">
+		<li class="nav-item">
+			<a id="links" href="#" class="nav-link text-white" onclick="loginerror()">Home page</a>
+		</li>
+		<li class="nav-item">
+			<a id="links" href="#" class="nav-link text-white" onclick="loginerror()">First Quarter</a>
+		</li>
+		<li class="nav-item">
+			<a id="links" href="#" class="nav-link text-white" onclick="loginerror()">Second Quarter</a>
+		</li>
+	</div>
+
+	
+</div>
+
+	<div class="search-container" style="margin-left: auto; font-family: Cascadia Code;">
+		<form>
+			<input type="search" placeholder="search.." name="Search" class="searchinput">
+			<button type="submit" class="searchsub btn-info">Submit</button>
+		</form>
+	</div>
+
+</nav>
+
+	<br>
+<center>
+
+	<div class="login-container" style="color: #009C98; font-family: Cascadia Code; " id="loginmenu">
+		<br>
+		<h2 style="font-family: Tw CEN MT; font-size: 45px; color: #27869B; ">Login</h2>
+			
+
+		<div class="col-md-10">
+			<img class="rounded-circle" id="profilepic" src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg">
+
+		<form action="mainpage.html" class="form-group">
+			<br>
+			<label id="EnterEmail"></label><br>
+			<input type="text" class="form-control bg-light" name="email" id="email" placeholder="Enter email">
+			<br>
+			
+			<label id="EnterPassword"></label><br>
+			<input type="password" class="form-control bg-light" name="password" id="password" placeholder="Enter password">
+			<br>
+
+			<input type="checkbox" name="remember">
+			<label id="RememberMe"></label>
+
+			<a href="mainpage.html" onclick="login()"><button style="width:350px; background-color: #009C98; font-family:Tw CEN MT; font-size: 20px; " class="btn ">LOGIN</button></a><br>
+			<a href="#"><button type="reset" style="width:200px; font-family:Tw CEN MT; font-size: 17px;" class="btn btn-light">CANCEL</button></a>
+		</form>
+		</div>
+		<div><a href="https://docs.google.com/document/d/1owxxRi4g5h8YHd5w4vj1NhERH33EPB53gkdAD4UP9aU/edit?usp=sharing"><p style="color: lightslategray; font-size: 12px;" ><i>References</i></p></a></div>
+	</div>
+
+	<br>
+</center>
+	<script type="text/javascript">
+		document.getElementById('EnterEmail').innerHTML = "Email";
+		document.getElementById('EnterPassword').innerHTML = "Password:";
+		document.getElementById('RememberMe').innerHTML = "Remember me";
+
+	function login(){
+		window.alert("Logging in..");
+	}
+
+	function loginerror(){
+		window.alert("Must login to access.");
+	}
+
+	</script>
+	
+
+</body>
+</html>
