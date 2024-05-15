@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<title>Home Page</title>
+
+	<style>
+		body{
+			background-image: url('https://img.freepik.com/free-vector/abstract-white-tone-memphis-social-background_53876-113860.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#Title{
+			font-family: Tw Cen MT;
+		}
+		#brand{
+			width: 70px;
+			height: 80px;
+		}
+		#links{
+			font-family: Cascadia Code;
+			font-size: 16px;
+		}
+		#References{
+			background: lightgrey;
+			width: 100px;
+			font-family: Tw Cen MT;
+			font-size: 20px;
+			border-radius: 5px;
+			}
+
+	</style>
+</head>
+<body>
+
+<nav class="justify-content-left navbar navbar-expand-md bg-dark">
+<img class="navbar-brand rounded-circle" src="ICT Logo.png" id="brand">
+
+<div id="topnav">
+	<div class="navbar-nav">
+		<li class="nav-item">
+			<a id="links" class="nav-link text-warning" href="mainpage.html">Home page</a>
+		</li>
+		<li class="nav-item">
+			<a id="links" class="nav-link text-white" href="page2.html" onclick="firstquarter()">First Quarter</a>
+		</li>
+		<li class="nav-item">
+			<a id="links" class="nav-link text-white" href="page3.html" onclick="secondquarter()">Second Quarter</a>
+		</li>
+	</div>
+
+	
+</div>
+
+	<div class="search-container" style="margin-left: auto; font-family: Cascadia Code;">
+		<form>
+			<input type="search" placeholder="search.." name="Search" class="searchinput">
+			<button type="submit" class="searchsub btn-info">Submit</button>
+		</form>
+	</div>
+
+</nav>
+<br><br><br>
+
+<center>
+	<img id="Profile" class="rounded-circle" style="width: 120px; height: 120px; " src="profilepic.jpg"><br><br>
+	<h1 style="text-decoration: underline; font-size: 45px; " id="Title">MY ONLINE PORTFOLIO</h1>
+
+	<p style="font-size: 25px; font-family: Haettenschweiler; color: dimgray; " >Erwin T. Salamat Jr. <br> 9-Sapphire</p>
+
+	<br><br><br><br>
+	<div id="References"><a href="https://docs.google.com/document/d/1owxxRi4g5h8YHd5w4vj1NhERH33EPB53gkdAD4UP9aU/edit?usp=sharing"><p style="color: lightslategray;" ><i>References</i></p></a></div>
+
+</center>
+
+	<script type="text/javascript"> //the function for the statements below is to notify the user on what action the buttons will do when clicked  
+	function firstquarter(){
+		window.alert("Viewing First Quarter Project..");
+	}
+	function secondquarter(){
+		window.alert("Viewing Second Quarter Project..");
+	}
+
+	</script>
+
+</body>
+</html>
